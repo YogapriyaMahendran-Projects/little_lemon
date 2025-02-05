@@ -12,7 +12,7 @@ export default function ReservationForm(props) {
   const [comments, setComments] = useState("");
 
   const [finalTime, setFinalTime] = useState(
-    props.availableTimes.map((times) => <option>{times}</option>)
+    props.availableTimes.map((times,index) => <option key={index}>{times}</option>)
   );
 
   function handleDateChange(e) {
@@ -23,7 +23,7 @@ export default function ReservationForm(props) {
 
     props.updateTimes(date);
 
-    setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
+    setFinalTime(props.availableTimes.map((times,index) => <option key={index}>{times}</option>));
   }
 
   const validData = fName.length > 0 && lName.length >0 && email.length>0 && tel.length > 0 && Number(people) > 1 && date ? true : false;
