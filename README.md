@@ -10,7 +10,7 @@ Final capstone project for Meta Front-end developer program on Coursera, which c
 
 ### Booking Page
 
-![Screenshot](./Reservation.png)
+![Screenshot](./Reservation_page.png)
 
 ### Tech Stack:
 
